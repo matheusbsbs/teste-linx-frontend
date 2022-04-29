@@ -1,0 +1,35 @@
+<mat-card>
+    <mat-card-title>Novo Produto</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome Produto"
+                [(ngModel)]="produto.nome" name="nome">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Descrição do Produto"
+                [(ngModel)]="produto.descricao" name="descricao">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Custo (R$)"
+                   [(ngModel)]="produto.custo" name="custo">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Margem %"
+                   [(ngModel)]="produto.margem" name="margem">
+        </mat-form-field>
+
+
+        <mat-form-field>
+            <input matInput placeholder="Imagem"
+                [(ngModel)]="produto.imgUrl" name="imgUrl">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="calculoPreco()" >
+        Salvar Produto
+    </button>    
+    <button mat-raised-button (click)="cancelProduto()">
+        Cancelar Produto
+    </button>    
+</mat-card>
+

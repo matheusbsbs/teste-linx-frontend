@@ -1,0 +1,36 @@
+/*table {*/
+/*    width: 100%;*/
+/*    background-color: yellow;*/
+/*}*/
+
+/*.edit {*/
+/*    margin-right: 10px;*/
+/*}*/
+
+/*.edit > i {*/
+/*    color: #d9cd26;*/
+/*}*/
+
+/*.delete > i {*/
+/*    color: #e35e6b;*/
+/*}*/
+/*.separacaoesquerda{*/
+/*    width: 50%;*/
+/*    margin-left: 0%;*/
+/*}*/
+/*.separacaodireita{*/
+/*    width: 50%;*/
+/*    margin-left: 50%;*/
+/*}*/
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container > * {
+    width: 65%;
+}
+
+.price {
+    color: #8a8282
+}

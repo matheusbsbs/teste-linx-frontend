@@ -1,0 +1,27 @@
+<mat-card>
+    <mat-card-title>Atualizar Produto</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome Produto" 
+                [(ngModel)]="produto.nome" name="nome">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Descrição do Produto" 
+                [(ngModel)]="produto.descricao" name="descricao">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Preço do Produto (R$)" 
+                [(ngModel)]="produto.preco" name="preco">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Imagem"
+                [(ngModel)]="produto.imgUrl" name="imgUrl">
+        </mat-form-field>
+    </form>
+    <button class="atualizar" mat-raised-button (click)="updateProduto()" >
+        Atualizar Produto
+    </button>    
+    <button mat-raised-button (click)="cancelProduto()">
+        Cancelar Produto
+    </button>    
+</mat-card>
